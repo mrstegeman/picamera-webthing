@@ -162,7 +162,7 @@ class PiCameraThing(Thing):
                        'A web connected Pi Camera')
         self.picam = MyPiCamera()
         
-        self.still_img = Value("")
+        self.still_img = Value(None)
         self.add_property(
             Property(self, 'snapshot', self.still_img,
                     metadata = {
